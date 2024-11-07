@@ -1,16 +1,17 @@
 import Header from './Header';
 import useMovieData from '../hooks/useMovieData';
 import MainContainer from './MainContainer';
+import UsePopularMovies from '../hooks/UsePopularMovies';
 const Browse = () => {
   useMovieData()
-
+  UsePopularMovies()
 
      
 
   return (
-    <div className='absolute  w-full bg-cover h-screen top-[0%]  absolute flex bg-grey-600' style={{backgroundImage:'url(https://static.vecteezy.com/system/resources/previews/036/226/872/non_2x/ai-generated-nature-landscapes-background-free-photo.jpg)'}}>
+    <div className='  w-full absolute top-[0%] bg-cover bg-grey-600'>
        
-        <Header />
+        {/* <Header /> */}
        <MainContainer />
        </div>
   )

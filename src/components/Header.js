@@ -23,7 +23,7 @@ signOut(auth).then(() => {
 
   return (
     <div className='flex absolute top-[0%]  justify-between px-6 z-10'>
-     < img className='w-[15%] bg-grey-400' src={Image} alt='logo' />
+     < img className='w-[12%] bg-grey-400' src={Image} alt='logo' />
       {
         user &&  <div className='flex gap-1 items-center '>
            <img className='pt-2' src={avatar_logo} alt='logo' />

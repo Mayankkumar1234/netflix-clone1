@@ -6,8 +6,11 @@ const SecondaryContainer = () => {
   const data = useSelector((state)=>state.movies)
  
   return (
-    <div className='w-full'>
+    <div className='w-screen h-full bg-black '>
         <MoviesList title={"Now playing"} playingMovies={data?.nowPlayingMovies} />
+        <MoviesList title={"Treding Movies"} playingMovies={data?.nowPlayingMovies} />
+        <MoviesList title={"Popular movies"} playingMovies={data?.popularMovies} />
+        <MoviesList title={"Upcoming Movies"} playingMovies={data?.nowPlayingMovies} />
       </div>
   )
 }

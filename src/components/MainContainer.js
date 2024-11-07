@@ -13,11 +13,11 @@ if(!movies)   return
     const { original_title, overview, id } = mainMovie;
     // console.log(movies.movies && movies.movies);
   return (
-    <div className='bg-zinc-100 w-[100%]'>
+    <div className='bg-zinc-100 w-[100%] relative overflow-x-hidden bg-cover'>
      <BackgroundVideo movieId={id} />
     <VideoTitle overview={overview} title={original_title} />
     <SecondaryContainer />
-    </div>
+      </div>
   )
 }
 
