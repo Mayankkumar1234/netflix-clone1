@@ -2,7 +2,7 @@ import React from 'react'
 import Body from './components/Body'
 const App = () => {
   return (
-    <div>
+    <div className='w-full h-full'>
     <Body />
     </div>
   )
